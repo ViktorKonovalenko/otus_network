@@ -24,14 +24,14 @@ MACHINES = {
                 ]
   },
 
-  #:centralServer => {
-  #      :box_name => "generic/ubuntu2204",
-  #      :vm_name => "centralServer",
-  #      :net => [
-  #                 ["192.168.0.2",    2, "255.255.255.240",  "dir-net"],
-  #                 ["192.168.56.12",  8, "255.255.255.0"],
-  #              ]
-  #},
+  :centralServer => {
+        :box_name => "generic/ubuntu2204",
+        :vm_name => "centralServer",
+        :net => [
+                   ["192.168.0.2",    2, "255.255.255.240",  "dir-net"],
+                   ["192.168.56.12",  8, "255.255.255.0"],
+                ]
+  },
 
   :office1Router => {
         :box_name => "generic/ubuntu2204",
@@ -55,26 +55,26 @@ MACHINES = {
                 ]
   },
 
-#  :office2Router => {
-#       :box_name => "generic/ubuntu2204",
-#       :vm_name => "office2Router",
-#       :net => [
-#                   ["192.168.255.6",  2,  "255.255.255.252",  "office2-central"],
-#                   ["192.168.1.1",    3,  "255.255.255.128",  "dev2-net"],
-#                   ["192.168.1.129",  4,  "255.255.255.192",  "test2-net"],
-#                   ["192.168.1.193",  5,  "255.255.255.192",  "office2-net"],
-#                   ["192.168.56.30",  8,  "255.255.255.0"],
-#               ]
-#  },
+  :office2Router => {
+       :box_name => "generic/ubuntu2204",
+       :vm_name => "office2Router",
+       :net => [
+                   ["192.168.255.6",  2,  "255.255.255.252",  "office2-central"],
+                   ["192.168.1.1",    3,  "255.255.255.128",  "dev2-net"],
+                   ["192.168.1.129",  4,  "255.255.255.192",  "test2-net"],
+                   ["192.168.1.193",  5,  "255.255.255.192",  "office2-net"],
+                   ["192.168.56.30",  8,  "255.255.255.0"],
+               ]
+  },
 
- # :office2Server => {
- #      :box_name => "generic/ubuntu2204",
- #      :vm_name => "office2Server",
- #      :net => [
- #                 ["192.168.1.2",    2,  "255.255.255.128",  "dev2-net"],
- #                 ["192.168.56.31",  8,  "255.255.255.0"],
- #              ]
- # }
+  :office2Server => {
+       :box_name => "generic/ubuntu2204",
+       :vm_name => "office2Server",
+       :net => [
+                  ["192.168.1.2",    2,  "255.255.255.128",  "dev2-net"],
+                  ["192.168.56.31",  8,  "255.255.255.0"],
+               ]
+  }
 }
 
 Vagrant.configure("2") do |config|
