@@ -32,12 +32,12 @@
 
 2. Практическая часть<br>
 При выполнении ДЗ столкнулся с проблемой развертки всего стенда, не хватало ресурсов компьютера, пришлось сократить кол-во ВМ. Выполнял ДЗ на след ВМ(выделел красным).<br>
-![image](https://github.com/ViktorKonovalenko/otus_network/assets/32430041/6630ff51-b8bd-485e-971b-43164f5c4a54)
+![image](https://github.com/ViktorKonovalenko/otus_network/assets/32430041/6630ff51-b8bd-485e-971b-43164f5c4a54)<br>
 Однако Vagrantfile и ansible playbook были написан для всех ВМ, но не производилось его тестирование, если изначальный Vagrantfile не отработает, просьба запустить усеченный вариант. Название вагрантфайла: Vagrantfile2<br>
 Запускаем Vagrant
 <pre>vagrant up</pre>
 Должен подняться след стенд и отработать ansible по настройке маршрутизации<br>
-![image](https://github.com/ViktorKonovalenko/otus_network/assets/32430041/fef26bc2-5236-4034-8f42-37a317c35844)
+![image](https://github.com/ViktorKonovalenko/otus_network/assets/32430041/fef26bc2-5236-4034-8f42-37a317c35844)<br>
 Проверяем выход в интернет на сервере office1Server через traceroute<br>
-![image](https://github.com/ViktorKonovalenko/otus_network/assets/32430041/94bd9e6e-6f33-4da2-8ef6-53b295a1cfed)
+![image](https://github.com/ViktorKonovalenko/otus_network/assets/32430041/94bd9e6e-6f33-4da2-8ef6-53b295a1cfed)<br>
 Видим что выход в интернет настроен через роутер inetRouter<br>
