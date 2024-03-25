@@ -37,8 +37,8 @@
 <br>
 Запускаем Vagrant
 <pre>vagrant up</pre>
-Должен подняться след стенд и отработать ansible по настройке маршрутизации<br>
+Должен подняться след стенд и отработать ansible по настройке маршрутизации.<br>
 ![image](https://github.com/ViktorKonovalenko/otus_network/assets/32430041/fef26bc2-5236-4034-8f42-37a317c35844) <br>
-Проверяем выход в интернет на сервере office1Server через traceroute<br>
+Проверяем выход в интернет на сервере office1Server через traceroute.<br>
 ![image](https://github.com/ViktorKonovalenko/otus_network/assets/32430041/94bd9e6e-6f33-4da2-8ef6-53b295a1cfed) <br>
 Видим что выход в интернет настроен через роутер inetRouter<br>
